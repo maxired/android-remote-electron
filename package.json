@@ -1,14 +1,14 @@
 {
-  "name": "electron-quick-start",
+  "name": "android-remote-electron",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Control your android device throught your dekstop. Nothing to install on the mobile, adb only",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/maxired/android-remote-electron.git"
   },
   "keywords": [
     "Electron",
@@ -19,9 +19,9 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
+    "url": "https://github.com/maxired/android-remote-electron/issues"
   },
-  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "homepage": "https://github.com/maxired/android-remote-electron/#readme",
   "devDependencies": {
     "electron-prebuilt": "^1.2.0"
   },

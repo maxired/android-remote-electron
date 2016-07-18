@@ -1,18 +1,11 @@
-# electron-quick-start
+# android-remote-electron
 
-**Clone and run for a quick way to see an Electron in action.**
+**Control your android with a desktop app**
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start) within the Electron documentation.
+This is Proof of Concept of a to control your your android device with a desktop app.
 
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start).
+Like VNC, but without any dependencies on the client.
+No root required, only need adb enabled.
 
 ## To Use
 
@@ -20,13 +13,17 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/maxired/android-remote-electron
 # Go into the repository
-cd electron-quick-start
+cd android-remote-electron
 # Install dependencies and run the app
 npm install && npm start
 ```
 
-Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
+This is based on Electron, adkit, h264-live-player, and Broadway.
 
-#### License [CC0 (Public Domain)](LICENSE.md)
+## Disclaimer
+
+This has been developed and use for a personal use only.
+
+Tested with a OneOlus one, running android 4.3.
