@@ -11,7 +11,7 @@
     #device{
       max-width: 100%;
       max-height: calc(100% - 64px);
-  }
+    }
   .buttons{
     position: absolute;
     bottom: 0;
@@ -21,9 +21,6 @@
     </style>
   </head>
   <body>
-
-    <video controls id="device" width="400" height="400" autoplay>
-    </video>
     <div class='buttons'>
       <button value='Menu' onclick="client.buttonMenu()">Menu</button>
       <button value='home' onclick="client.buttonHome()">Home</button>
@@ -34,5 +31,6 @@
   <script>
     // You can also require other files to run in this process
     client = require('./renderer.js');
+    console.log('client', client);
   </script>
 </html>
