@@ -3,17 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <style>
+    html,body{
+      height: 100%;
+      margin:0;
+    }
+    #device{
+      max-width: 100%;
+      max-height: calc(100% - 64px);
+  }
+  .buttons{
+    position: absolute;
+    bottom: 0;
+    height: 64px;
+    background-color: black;
+  }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <video controls id="device" width="400" height="400" autoplay>
+    </video>
+    <div class='buttons'>
+      <button value='Menu' onclick="client.buttonMenu()">Menu</button>
+      <button value='home' onclick="client.buttonHome()">Home</button>
+      <button value='back' onclick="client.buttonBack()">Back</button>
+    </div>
   </body>
 
   <script>
     // You can also require other files to run in this process
-    require('./renderer.js')
+    client = require('./renderer.js');
   </script>
 </html>
